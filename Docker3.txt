@@ -1,0 +1,2 @@
+3. Setup a Discord server and integrate above Hello World healthcheck.io into a channel.
+https://discord.gg/Ww5tb8

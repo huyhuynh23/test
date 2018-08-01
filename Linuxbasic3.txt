@@ -1,0 +1,5 @@
+3. A bundle of files/folders to install openssh-server (apt package) offline, Ubuntu 16.04
+apt-get download openssh-server
+apt-get build-dep --download-only --reinstall -o dir::cache=<path_to_save> openssh-server
+
+#Then install without internet 

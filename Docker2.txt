@@ -1,0 +1,10 @@
+2. Write a bash script to start Hello World docker app (server always up, auto restart when down, and make sure healthcheck to be notified whenever server down every 1 minutes)
+
+* * * * * sh auto.sh
+
+#!/bin/bash
+if
+   [ `docker inspect -f {{.State.Running}} imageID`  = "false" ];
+   then
+    docker restart imageID
+fi

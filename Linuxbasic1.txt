@@ -1,0 +1,10 @@
+Sync 2 files on 2 servers
+
+Cronjob
+* * * * * /usr/cript/rsync.sh
+
+#!/bin/bash
+while true; 
+  do
+  rsync -a  /home/test/ root@192.168.1.1:/home/data
+done
